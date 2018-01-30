@@ -1,0 +1,28 @@
+.about-hero-contianer {
+  height: 800px;
+  width: 100%;
+  margin-top: 200px;
+  background: #FFC039; }
+
+.about-card {
+  height: 170px; }
+
+.pic-container {
+  height: 150px;
+  width: 150px;
+  float: left;
+  margin: 10px;
+  background: #999; }
+
+.text-container {
+  height: 150px;
+  width: 500px;
+  float: left;
+  margin: 10px;
+  background: #ffde86; }
+  .text-container h1 {
+    font-family: "Dosis", sans-serif;
+    margin: 5px; }
+  .text-container p {
+    font-family: "Roboto", sans-serif;
+    margin: 5px; }

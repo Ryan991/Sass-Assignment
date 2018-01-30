@@ -1,0 +1,38 @@
+.about-hero-contianer{
+    height: 800px;
+    width: 100%;
+
+    margin-top: 200px;
+
+    background: $secondarycolor;
+}
+.about-card{
+    height: 170px;
+}
+.pic-container{
+    height: 150px;
+    width: 150px;
+    float: left;
+
+    margin: 10px;
+
+    background: #999;
+}
+.text-container{
+    height: 150px;
+    width: 500px;
+    float: left;
+
+    margin: 10px;
+
+    background: $primarycolor;
+
+    h1{
+        font-family: $title-font;
+        margin: 5px;
+    }
+    p{
+        font-family: $content-font;
+        margin: 5px;
+    }
+}
