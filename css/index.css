@@ -5,19 +5,27 @@ nav .logo {
   background: red; }
 
 .main-container {
-  width: 95%;
-  margin: 0 auto;
-  padding: 50px; }
-
-.thumbnail {
-  width: 70px;
-  height: 70px;
-  background: #FFC039;
-  display: inline-block; }
+  width: 90%;
+  margin: 0 auto; }
 
 .row-container {
-  height: 200px; }
+  padding: 20px; }
 
-.row-container h2,
-.row-container p {
-  display: inline-block; }
+.thumbnail {
+  width: 180px;
+  height: 180px;
+  background: red;
+  display: inline-block;
+  margin-right: 30px; }
+
+.text {
+  width: calc(100% - 250px);
+  display: inline-block;
+  overflow: hidden; }
+
+.text h2 {
+  margin: 0; }
+
+.text p {
+  padding-bottom: 10px;
+  height: 100px; }
