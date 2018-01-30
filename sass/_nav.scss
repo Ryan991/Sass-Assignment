@@ -1,12 +1,57 @@
+body{
+    margin: 0;
+    margin-top: 50px;
+
+}
+
 nav{
-    .logo{
+    width: 100%;
+    height: 40px;
+    background: $tertiarycolor;
+    height: 50px;
+    position: fixed;
+    top: 0;
 
-        height: 20px;
-        width: 30px;
-        float: left;
-        background: red;
-    }
+}
+
+.content{
+    width: 80%;
+    background: $tertiarycolor;
+    display: flex;
+    max-width: 980px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+a{
+    height: 50px;
+    text-decoration: none;
+    color: $primarycolor;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-family: 'Dosis';
+
+}
+a:hover{
+    color: $secondarycolor;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    text-align:center;
+    flex-grow: 1;
+    padding-top: 15px;
 
 
+}
+.logo{
+    padding-top: 7px;
 
+}
+
+p{
+    padding-bottom: 100px;
 }
