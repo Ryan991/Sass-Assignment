@@ -7,27 +7,48 @@
    padding: 20px;
 }
 
+.row-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.row-container a:hover{
+    color: $secondarycolor;
+
+}
 
 .thumbnail{
    width: 180px;
    height: 180px;
-   background: red;
+   background: $primarycolor;
    display: inline-block;
    margin-right: 30px;
-
+   vertical-align: top;
 }
-.text {
+
+.text{
 
    width: calc(100% - 250px);
    display: inline-block;
    overflow: hidden;
+   vertical-align: top; 
 }
 
 .text h2{
    margin: 0;
+   font-family: $title-font;
 }
-.text p{
-
-   padding-bottom: 10px;
+.text p,.text subtitle{
    height: 100px;
+   font-family: $content-font;
+}
+
+@media (max-width: 922px) {
+    .text p, .text subtitle{
+        font-size: 0.9em;
+    }
+
+     .text h2{
+    font-size: 1.3em;
+     }
 }

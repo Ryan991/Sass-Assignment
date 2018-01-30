@@ -11,21 +11,37 @@ nav .logo {
 .row-container {
   padding: 20px; }
 
+.row-container a {
+  text-decoration: none;
+  color: black; }
+
+.row-container a:hover {
+  color: #FFC039; }
+
 .thumbnail {
   width: 180px;
   height: 180px;
-  background: red;
+  background: #ffde86;
   display: inline-block;
-  margin-right: 30px; }
+  margin-right: 30px;
+  vertical-align: top; }
 
 .text {
   width: calc(100% - 250px);
   display: inline-block;
-  overflow: hidden; }
+  overflow: hidden;
+  vertical-align: top; }
 
 .text h2 {
-  margin: 0; }
+  margin: 0;
+  font-family: "Dosis", sans-serif; }
 
-.text p {
-  padding-bottom: 10px;
-  height: 100px; }
+.text p, .text subtitle {
+  height: 100px;
+  font-family: "Roboto", sans-serif; }
+
+@media (max-width: 922px) {
+  .text p, .text subtitle {
+    font-size: 0.9em; }
+  .text h2 {
+    font-size: 1.3em; } }
