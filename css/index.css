@@ -3,3 +3,21 @@ nav .logo {
   width: 30px;
   float: left;
   background: red; }
+
+.main-container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 50px; }
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  background: #FFC039;
+  display: inline-block; }
+
+.row-container {
+  height: 200px; }
+
+.row-container h2,
+.row-container p {
+  display: inline-block; }

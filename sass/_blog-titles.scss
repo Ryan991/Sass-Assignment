@@ -1,0 +1,21 @@
+.main-container{
+    width: 95%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.thumbnail{
+    width: 70px;
+    height: 70px;
+    background: $secondarycolor;
+    display: inline-block;
+}
+
+.row-container{
+    height: 200px;
+}
+
+.row-container h2,
+.row-container p{
+    display: inline-block;
+}
