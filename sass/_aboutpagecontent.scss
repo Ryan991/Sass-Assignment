@@ -30,9 +30,6 @@ $window-small: 710px;
     margin: 0 auto;
     width: 75%;
     max-width: 1000px;
-
-
-    background: #555;
 }
 .pic-container{
     height: 150px;
@@ -64,6 +61,7 @@ $window-small: 710px;
     }
     p{
         font-family: $content-font;
+        text-align: justify;
         margin: 5px;
     }
 
@@ -71,14 +69,10 @@ $window-small: 710px;
         height: 100px;
         width: calc(100% - 20px);
         h1{
-            font-family: $title-font;
             font-size: 1.2em;
-            margin: 5px;
         }
         p{
-            font-family: $content-font;
             font-size: 0.8em;
-            margin: 5px;
         }
     }
     @include respond-to(medium-screens) {;}

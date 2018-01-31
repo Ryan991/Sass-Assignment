@@ -9,8 +9,7 @@
   margin: 10px;
   margin: 0 auto;
   width: 75%;
-  max-width: 1000px;
-  background: #555; }
+  max-width: 1000px; }
 
 .pic-container {
   height: 150px;
@@ -35,16 +34,13 @@
     margin: 5px; }
   .text-container p {
     font-family: "Roboto", sans-serif;
+    text-align: justify;
     margin: 5px; }
   @media only screen and (max-width: 710px) {
     .text-container {
       height: 100px;
       width: calc(100% - 20px); }
       .text-container h1 {
-        font-family: "Dosis", sans-serif;
-        font-size: 1.2em;
-        margin: 5px; }
+        font-size: 1.2em; }
       .text-container p {
-        font-family: "Roboto", sans-serif;
-        font-size: 0.8em;
-        margin: 5px; } }
+        font-size: 0.8em; } }
