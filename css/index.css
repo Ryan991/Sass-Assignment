@@ -1,5 +1,5 @@
 .about-hero-contianer {
-  height: 800px;
+  height: 100%;
   width: 100%;
   margin-top: 250px;
   background: #FFC039; }
@@ -19,6 +19,10 @@
   margin: 10px;
   background-image: url(../img/about-pic-1.png);
   background-size: cover; }
+  @media only screen and (max-width: 710px) {
+    .pic-container {
+      height: 25px;
+      width: 25px; } }
 
 .text-container {
   height: 150px;
@@ -32,3 +36,15 @@
   .text-container p {
     font-family: "Roboto", sans-serif;
     margin: 5px; }
+  @media only screen and (max-width: 710px) {
+    .text-container {
+      height: 100px;
+      width: calc(100% - 20px); }
+      .text-container h1 {
+        font-family: "Dosis", sans-serif;
+        font-size: 1.2em;
+        margin: 5px; }
+      .text-container p {
+        font-family: "Roboto", sans-serif;
+        font-size: 0.8em;
+        margin: 5px; } }

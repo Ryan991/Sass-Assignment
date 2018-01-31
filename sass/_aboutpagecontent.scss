@@ -1,5 +1,22 @@
+// Media Seciton for responsive website
+
+$window-mid: 1024px;
+$window-small: 710px;
+
+@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media only screen and (max-width: $window-small) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (min-width: $window-small) and (max-width: $window-mid) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (max-width: $window-mid) { @content; }
+    }
+}
+
 .about-hero-contianer{
-    height: 800px;
+    height: 100%;
     width: 100%;
 
     margin-top: 250px;
@@ -18,7 +35,6 @@
     background: #555;
 }
 .pic-container{
-
     height: 150px;
     width: 150px;
     float: left;
@@ -27,6 +43,11 @@
 
     background-image: url(../img/about-pic-1.png);
     background-size: cover;
+
+    @include respond-to(handhelds) {
+        height: 25px;
+        width: 25px;
+    }
 }
 .text-container{
     height: 150px;
@@ -45,4 +66,21 @@
         font-family: $content-font;
         margin: 5px;
     }
+
+    @include respond-to(handhelds) {
+        height: 100px;
+        width: calc(100% - 20px);
+        h1{
+            font-family: $title-font;
+            font-size: 1.2em;
+            margin: 5px;
+        }
+        p{
+            font-family: $content-font;
+            font-size: 0.8em;
+            margin: 5px;
+        }
+    }
+    @include respond-to(medium-screens) {;}
+    @include respond-to(wide-screens) {;}
 }
