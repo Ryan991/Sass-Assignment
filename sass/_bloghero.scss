@@ -1,0 +1,72 @@
+@mixin title-font {
+    font-family: $title-font;
+    font-size: 40px;
+    font-weight: $font-bold;
+}
+
+@mixin other-pages-font {
+    font-family: $title-font;
+    font-weight: $font-bold;
+    font-size: 40px;
+}
+
+@mixin main-hero {
+    height: 200px;
+    background: $secondarycolor;
+}
+
+@mixin other-hero {
+        height: 200px;
+        background: $secondarycolor;
+}
+
+
+.main-h1 {
+    @include title-font;
+    margin: 0;
+
+}
+
+.blog-page {
+    @include other-pages-font;
+    padding: 0;
+    margin: 0;
+
+}
+
+.hero  {
+    @include main-hero;
+    margin-top: 100px;
+
+}
+
+.blog-content-hero {
+    @include other-hero
+    margin-top: 100px;
+}
+
+.font-container {
+    padding: 40px;
+
+    .date {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+}
+
+
+
+
+@media (max-width: 800px) {
+
+    .font-container  h1{
+        font-size: 30px;
+    }
+
+    .blog-page h1 {
+        font-size: 30px;
+    }
+
+
+
+}
