@@ -15,10 +15,6 @@
     background: $secondarycolor;
 }
 
-@mixin other-hero {
-        height: 200px;
-        background: $secondarycolor;
-}
 
 
 .main-h1 {
@@ -41,16 +37,17 @@
 }
 
 .blog-content-hero {
-    @include other-hero
+    @include main-hero;
     margin-top: 100px;
 }
 
 .font-container {
-    padding: 40px;
+    padding: 60px;
 
     .date {
         margin-bottom: 10px;
         margin-top: 5px;
+        font-family: $title-font;
     }
 }
 
@@ -59,13 +56,20 @@
 
 @media (max-width: 800px) {
 
-    .font-container  h1{
-        font-size: 30px;
+    .blog-content-hero {
+        text-align: center;
     }
 
-    .blog-page h1 {
+    .font-container {
+        text-align: center;
+    }
+        .blog-page {
         font-size: 30px;
     }
+        .main-h1 {
+            font-size: 30px;
+            text-align: center;
+        }
 
 
 

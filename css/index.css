@@ -28,13 +28,19 @@ nav .logo {
   margin-top: 100px; }
 
 .font-container {
-  padding: 40px; }
+  padding: 60px; }
   .font-container .date {
     margin-bottom: 10px;
-    margin-top: 5px; }
+    margin-top: 5px;
+    font-family: "Dosis", sans-serif; }
 
 @media (max-width: 800px) {
-  .font-container h1 {
+  .blog-content-hero {
+    text-align: center; }
+  .font-container {
+    text-align: center; }
+  .blog-page {
     font-size: 30px; }
-  .blog-page h1 {
-    font-size: 30px; } }
+  .main-h1 {
+    font-size: 30px;
+    text-align: center; } }
