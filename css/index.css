@@ -5,11 +5,13 @@ nav .logo {
   background: red; }
 
 .main-container {
-  width: 90%;
-  margin: 0 auto; }
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif; }
 
 .row-container {
-  padding: 20px; }
+  padding: 20px;
+  height: 200px; }
 
 .row-container a {
   text-decoration: none;
@@ -24,24 +26,50 @@ nav .logo {
   background: #ffde86;
   display: inline-block;
   margin-right: 30px;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 .text {
   width: calc(100% - 250px);
+  height: 180px;
   display: inline-block;
-  overflow: hidden;
-  vertical-align: top; }
+  vertical-align: middle;
+  text-overflow: ellipsis; }
 
 .text h2 {
   margin: 0;
   font-family: "Dosis", sans-serif; }
 
-.text p, .text subtitle {
-  height: 100px;
-  font-family: "Roboto", sans-serif; }
+.readmore-button {
+  float: right; }
 
 @media (max-width: 922px) {
-  .text p, .text subtitle {
-    font-size: 0.9em; }
+  .main-container {
+    width: 100%;
+    margin: 0 auto; }
+  .row-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 150px;
+    min-width: 500px; }
+  .text {
+    height: 120px;
+    text-overflow: none; }
+  .thumbnail {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px; }
   .text h2 {
-    font-size: 1.3em; } }
+    font-size: 1.2em; }
+  .text p, .text subtitle, .text a {
+    font-size: .8em; }
+  .readmore-button {
+    float: none;
+    display: block;
+    padding-left: 80%;
+    font-size: .8em; } }
+
+.blog-content {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif; }
