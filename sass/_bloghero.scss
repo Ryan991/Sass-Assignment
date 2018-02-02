@@ -21,8 +21,9 @@
 
 .hero  {
     @include main-hero;
+    opacity: .8;
     border-top: 1px solid $tertiarycolor;
-    border-bottom: 1px solid $tertiarycolor;
+    border-bottom: 2px solid $tertiarycolor;
 }
 
 .hero .font-container {
@@ -35,8 +36,9 @@
 
 .blog-content-hero {
     @include main-hero;
+    opacity: .8;
     border-top: 1px solid $tertiarycolor;
-    border-bottom: 1px solid $tertiarycolor;
+    border-bottom: 2px solid $tertiarycolor;
 
 .font-container {
     padding: 60px 0px;

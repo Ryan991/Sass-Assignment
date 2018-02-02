@@ -110,8 +110,9 @@ footer {
 .hero {
   height: 200px;
   background: #FFC039;
+  opacity: .8;
   border-top: 1px solid #FF5F07;
-  border-bottom: 1px solid #FF5F07; }
+  border-bottom: 2px solid #FF5F07; }
 
 .hero .font-container {
   padding: 70px 0px;
@@ -123,8 +124,9 @@ footer {
 .blog-content-hero {
   height: 200px;
   background: #FFC039;
+  opacity: .8;
   border-top: 1px solid #FF5F07;
-  border-bottom: 1px solid #FF5F07; }
+  border-bottom: 2px solid #FF5F07; }
   .blog-content-hero .font-container {
     padding: 60px 0px;
     font-family: "Dosis", sans-serif;
