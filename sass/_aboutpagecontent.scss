@@ -79,12 +79,15 @@ $window-small: 710px;
 
         transition: 0.2s;
         transform: translateX(0px);
+        transform: translateY(0px);
+
 
         @include respond-to(handhelds) {
             height: 25px;
             width: 25px;
             float: right;
             transform: translateX(5px);
+            transform: translateY(5px);
         }
     }
 }
