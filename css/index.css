@@ -99,26 +99,36 @@ footer {
 .main-h1 {
   font-family: "Dosis", sans-serif;
   font-size: 40px;
-  font-weight: 700;
-  margin: 0; }
+  font-weight: 700; }
 
 .blog-page {
   font-family: "Dosis", sans-serif;
-  font-weight: 700;
   font-size: 40px;
-  padding: 0;
+  font-weight: 700;
   margin: 0; }
 
 .hero {
   height: 200px;
-  background: #FFC039; }
+  background: #FFC039;
+  border-top: 1px solid #FF5F07;
+  border-bottom: 1px solid #FF5F07; }
+
+.hero .font-container {
+  padding: 70px 0px;
+  text-align: center; }
+
+.main-h1 {
+  margin: 0; }
 
 .blog-content-hero {
   height: 200px;
-  background: #FFC039; }
+  background: #FFC039;
+  border-top: 1px solid #FF5F07;
+  border-bottom: 1px solid #FF5F07; }
   .blog-content-hero .font-container {
-    padding: 50px;
-    font-family: "Dosis", sans-serif; }
+    padding: 60px 0px;
+    font-family: "Dosis", sans-serif;
+    text-align: center; }
   .blog-content-hero .date {
     margin-bottom: 15px;
     margin-top: 5px;

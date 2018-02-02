@@ -4,12 +4,6 @@
     font-weight: $font-bold;
 }
 
-@mixin other-pages-font {
-    font-family: $title-font;
-    font-weight: $font-bold;
-    font-size: 40px;
-}
-
 @mixin main-hero {
     height: 200px;
     background: $secondarycolor;
@@ -17,26 +11,37 @@
 
 .main-h1 {
     @include title-font;
-    margin: 0;
 }
 
 .blog-page {
-    @include other-pages-font;
-    padding: 0;
+    @include title-font;
     margin: 0;
 }
 
+
 .hero  {
     @include main-hero;
+    border-top: 1px solid $tertiarycolor;
+    border-bottom: 1px solid $tertiarycolor;
 }
+
+.hero .font-container {
+    padding: 70px 0px;
+    text-align: center;
+}
+    .main-h1 {
+        margin: 0;
+    }
 
 .blog-content-hero {
     @include main-hero;
+    border-top: 1px solid $tertiarycolor;
+    border-bottom: 1px solid $tertiarycolor;
 
 .font-container {
-
-    padding: 50px;
+    padding: 60px 0px;
     font-family: $title-font;
+    text-align: center;
     }
 
     .date {
@@ -71,6 +76,7 @@
         .blog-page {
         font-size: 30px;
         }
+
         .main-h1 {
             font-size: 30px;
             text-align: center;
