@@ -1,55 +1,3 @@
-
-nav .logo {
-  height: 20px;
-  width: 30px;
-  float: left;
-  background: red; }
-
-.main-h1 {
-  font-family: "Dosis", sans-serif;
-  font-size: 40px;
-  font-weight: 700;
-  margin: 0; }
-
-.blog-page {
-  font-family: "Dosis", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  padding: 0;
-  margin: 0; }
-
-.hero {
-  height: 200px;
-  background: #FFC039;
-  margin-top: 100px; }
-
-.blog-content-hero {
-  height: 200px;
-  background: #FFC039;
-  margin-top: 100px; }
-
-.font-container {
-  padding: 60px; }
-  .font-container .date {
-    margin-bottom: 10px;
-    margin-top: 5px;
-    font-family: "Dosis", sans-serif; }
-
-@media (max-width: 800px) {
-  .blog-content-hero {
-    text-align: center; }
-  .font-container {
-    text-align: center; }
-  .blog-page {
-    font-size: 30px; }
-<<<<<<< HEAD
-  .main-h1 {
-    font-size: 30px;
-    text-align: center; } }
-=======
-  .blog-page h1 {
-    font-size: 30px; } }
-
 body {
   margin: 0;
   margin-top: 50px; }
@@ -149,4 +97,55 @@ footer {
     color: #FF5F07;
     background: #FFC039; }
 
->>>>>>> d54b51869804fc942393b964727ebc28f790fc72
+.main-h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0; }
+
+.blog-page {
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 0;
+  margin: 0; }
+
+.hero {
+  height: 200px;
+  background: #FFC039; }
+
+.blog-content-hero {
+  height: 200px;
+  background: #FFC039; }
+  .blog-content-hero .font-container {
+    padding: 50px;
+    font-family: "Dosis", sans-serif; }
+  .blog-content-hero .date {
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-family: "Dosis", sans-serif; }
+
+.back-a-tag {
+  display: inline-block;
+  transition: .1s all ease-in; }
+
+.back-a-tag:hover {
+  transform: scale(1.2, 1.2);
+  font-weight: 600;
+  color: #FF5F07; }
+
+@media (max-width: 800px) {
+  .blog-content-hero {
+    text-align: center; }
+  .font-container {
+    text-align: center; }
+  .blog-page {
+    font-size: 30px; }
+  .main-h1 {
+    font-size: 30px;
+    text-align: center; }
+  .back-a-tag {
+    padding-right: 20px; }
+  .back-a-tag:hover {
+    font-weight: 400;
+    transform: none; } }
