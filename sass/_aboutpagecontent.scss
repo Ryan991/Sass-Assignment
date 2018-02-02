@@ -41,6 +41,7 @@ $window-small: 710px;
     max-width: 1000px;
 
     background: $primarycolor;
+    position: relative;
 
     h1{
         font-family: $title-font;
@@ -65,21 +66,25 @@ $window-small: 710px;
     }
     @include respond-to(medium-screens) {;}
     @include respond-to(wide-screens) {;}
-}
 
-.pic-container{
-    height: 150px;
-    width: 150px;
-    float: left;
+    .pic-container{
+        height: 150px;
+        width: 150px;
+        float: left;
 
-    margin: 10px;
+        margin: 10px;
 
-    background-image: url(../img/about-pic-1.png);
-    background-size: cover;
+        background-image: url(../img/about-pic-1.png);
+        background-size: cover;
 
-    @include respond-to(handhelds) {
-        height: 25px;
-        width: 25px;
-        float: right;
+        transition: 0.2s;
+        transform: translateX(0px);
+
+        @include respond-to(handhelds) {
+            height: 25px;
+            width: 25px;
+            float: right;
+            transform: translateX(5px);
+        }
     }
 }
