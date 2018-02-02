@@ -1,0 +1,101 @@
+// Media Seciton for responsive website
+
+$window-mid: 1024px;
+$window-small: 710px;
+
+@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media only screen and (max-width: $window-small) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (min-width: $window-small) and (max-width: $window-mid) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (max-width: $window-mid) { @content; }
+    }
+}
+
+.about-hero-contianer{
+    width: 100%;
+
+    margin-top: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background: $secondarycolor;
+}
+
+
+.about-card{
+    height: 20%;
+
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 75%;
+    max-width: 1000px;
+
+    background: $primarycolor;
+    position: relative;
+
+    h1{
+        font-family: $title-font;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .text-container{
+        width: calc(100% - 170px);
+        margin: 0;
+        display: inline-block;
+
+        p{
+            font-family: $content-font;
+            text-align: justify;
+            margin: 5px;
+        }
+    }
+
+    @include respond-to(handhelds) {
+        height: 20%;
+        width: calc(100% - 100px);
+
+        h1{
+            font-size: 1.2em;
+        }
+        .text-container{
+            width: 100%;
+
+            p{
+                font-size: 0.8em;
+            }
+        }
+
+    }
+    @include respond-to(medium-screens) {;}
+    @include respond-to(wide-screens) {;}
+}
+
+
+.pic-container{
+    height: 150px;
+    width: 150px;
+
+    margin: 10px;
+    float: left;
+
+    background-image: url(../img/about-pic-1.png);
+    background-size: cover;
+
+    transition: 0.2s;
+    transform: translateX(0px);
+    transform: translateY(0px);
+
+
+    @include respond-to(handhelds) {
+        height: 25px;
+        width: 25px;
+        float: right;
+        transform: translateX(5px);
+        transform: translateY(5px);
+    }
+}
