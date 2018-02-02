@@ -1,0 +1,14 @@
+body{
+    background: $secondarycolor;
+}
+.blog-content{
+   width: 80%;
+   margin: 0 auto;
+   font-family: $content-font;
+}
+
+@media(max-width: 922px){
+    .blog-content{
+        font-size: 0.8em;
+    }
+}
