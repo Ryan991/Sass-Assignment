@@ -16,7 +16,7 @@ $window-small: 710px;
     }
 }
 
-.about-hero-contianer{
+.about-hero-container{
     width: 100%;
 
     padding-top: 5px;
@@ -81,16 +81,13 @@ $window-small: 710px;
 .pic-container{
     height: 150px;
     width: 150px;
-
-    margin: 10px;
     float: left;
-
     background-image: url(../img/about-pic-1.png);
     background-size: cover;
 
     transition: 0.2s;
-    transform: translateX(0px);
-    transform: translateY(0px);
+    // transform: translateX(0px);
+    // transform: translateY(0px);
 
 
     @include respond-to(handhelds) {

@@ -39,10 +39,8 @@
 .text-body{
     margin: 0;
    width: calc(100% - 250px);
-   // height: 180px;
    display: inline-block;
    vertical-align:middle;
-   // text-overflow: ellipsis;
 }
 
 .text-body h2{
@@ -51,9 +49,6 @@
    font-family: $title-font;
 }
 
-// .readmore-button{
-//     float: right;
-// }
 
 @media (max-width:700px) {
     .main-container{
@@ -64,13 +59,10 @@
 
     .row-container{
         margin: 0 auto;
-       // padding: 20px;
        height: 20%;
-       // min-width: 500px;
        margin-bottom: 20px;
     }
     .text-body{
-        // height: 120px;
         text-overflow: none;
         margin: 0 auto;
         min-width: 90%;
@@ -79,7 +71,6 @@
     .thumbnail{
        width: 120px;
        height: 120px;
-       // margin-right: 10px;
     }
 .text h2{
     font-size: 1.2em;
@@ -87,34 +78,5 @@
     .text p,.text subtitle, .text a{
        font-size: .8em;
     }
-    // .readmore-button{
-    //     float: none;
-    //     display: block;
-    //     padding-left: 80%;
-    //     font-size: .8em;
-    // }
+
 }
-//
-// @media (max-width:922px) {
-//     .row-container{
-//        height: 100px;
-//     }
-//     .thumbnail{
-//        width: 150px;
-//        height: 150px;
-//        vertical-align:middle;
-//     }
-//     .text h2{
-//    font-size: 1.1em;
-//     }
-//
-//     .text p, .text subtitle{
-//         height:110px;
-//         font-size: 0.89em;
-//         margin: 0;
-//     }
-//
-//      .readmore-button{
-//              float: right;
-//      }
-// }
